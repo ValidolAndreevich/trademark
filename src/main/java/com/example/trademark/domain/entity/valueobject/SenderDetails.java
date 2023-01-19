@@ -2,8 +2,7 @@ package com.example.trademark.domain.entity.valueobject;
 
 import lombok.Data;
 
-
 @Data
-public class GoodsServicesDetails {
-  private GoodsServices goodsServices;
+public class SenderDetails {
+  private String requestProducerDateTime;
 }

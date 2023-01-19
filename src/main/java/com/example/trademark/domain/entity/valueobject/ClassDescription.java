@@ -6,5 +6,5 @@ import java.util.List;
 @Data
 public class ClassDescription {
   private String classNumber;
-  private List<GoodsServicesDescription> goodsServicesDescriptions;
+  private List<String> goodsServicesDescription;
 }
