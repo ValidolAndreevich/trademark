@@ -1,6 +1,10 @@
 HELP.md
 target/
 .mvn
+.data
+.database-data
+.gen
+.node-modules
 !**/src/main/**/target/
 !**/src/test/**/target/
 
