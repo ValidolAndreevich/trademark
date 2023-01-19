@@ -1,0 +1,49 @@
+openapi: 3.0.1
+info:
+  title: Trademark search API
+  version: 0.0.1-SNAPSHOT
+paths:
+  /api/v1/trademarks/all:
+    get:
+      tags:
+        - Trademarks
+      summary: Retrieves all trademarks.
+      operationId: retrieveTrademarksUsingGET
+      responses:
+        200:
+          description: OK
+          content:
+            application/json;charset=UTF-8:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TrademarkResponseDto'
+      deprecated: false
+components:
+  schemas:
+    TrademarkResponseDto:
+      title: TrademarkResponseDto
+      type: object
+      properties:
+        id:
+          type: string
+        applicationNumber:
+          type: string
+        applicationDate:
+          type: string
+        registrationDate:
+          type: string
+        applicationLanguageCode:
+          type: string
+        expiryDate:
+          type: string
+        trademarkKind:
+          type: string
+        trademarkFeature:
+          type: string
+        trademarkName:
+          type: string
+        trademarkDescription:
+          type: array
+          items:
+            type: string
